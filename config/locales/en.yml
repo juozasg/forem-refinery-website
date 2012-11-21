@@ -1,0 +1,21 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  forem:
+    forum:
+      new: "New"
+  refinery:
+    users:
+      new:
+        fill_form: "Enter your account information. You'll have to verify your email and get approved by site administrator to log in."
+      create:
+        welcome: "You've registered on the WSA Members Site, %{who}. Please check your email to confirm before logging in."
+
+  devise:
+    failure:
+      unconfirmed: 'You have to confirm your account by email before continuing.'
+      not_approved: 'Your account has not been approved by your administrator yet.'
+    confirmations:
+      confirmed: 'Your account email was successfully confirmed.'

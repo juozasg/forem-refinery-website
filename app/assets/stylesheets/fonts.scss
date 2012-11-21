@@ -1,0 +1,69 @@
+* {
+    text-decoration: none;
+}
+body {
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: underline;
+}
+
+#page strong, #page caption {
+    font-weight: bold;
+}
+
+#page em {
+    font-style: italic;
+}
+
+#logo, .actions {
+    font-family: QuicksandBold, Arial, sans-serif;
+}
+
+#menu, menu, h1, h2, h3, h4 {
+    font-family: QuicksandBook, Arial, sans-serif;
+}
+
+
+#menu {
+    font-size: 16px;
+}
+
+menu {
+    font-size: 15px;
+}
+
+.actions {
+    font-size: 12px;
+}
+
+#body *, #side_body *, .page_part_body, .page_part_side_body {
+    line-height: 22px;
+}
+
+p {
+    line-height: 17px;
+}
+
+
+#header #logo {
+    font-size: 35px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
+}
+
+
+input.string {
+    font-size: 16px;
+}

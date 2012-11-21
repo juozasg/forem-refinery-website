@@ -1,0 +1,9 @@
+<!-- <p>Footer content</p> -->
+<%= javascript_include_tag 'jquery' %>
+
+<% content_for :javascripts do %>
+
+<%= javascript_include_tag '/wymeditor/jquery.wymeditor' %>
+<%= javascript_include_tag 'boot_members_wymeditor' %>
+
+<% end  %>

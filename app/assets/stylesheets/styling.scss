@@ -1,0 +1,167 @@
+@import "color_variables";
+
+body {
+    color: $default-text;
+    background-color: $default-background;
+}
+
+input, textarea, select, p, li, blockquote, a, input {
+    color: inherit;
+    background-color: inherit;
+}
+
+
+h1, h2, h3, h4, h5 {
+    color: $darker-text;
+}
+
+a {
+    color: $darker-text
+}
+
+a:visited {
+    color: $visited-text;
+}
+
+a:hover {
+    color: $lighter-text;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+table td {
+    border: 1px solid #444;
+    padding: 2px;
+}
+
+body {
+    background: url("/images/bgnoise.png") repeat scroll 0 0 #fff;
+}
+
+
+#page h3 {
+    margin-bottom: 12px;
+}
+
+#page blockquote {
+    padding-left: 10px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-left: 3px solid #444;
+    font-style: italic;
+}
+
+#body_content_title, #forums_title {
+    display: block;
+    background-color: white;
+}
+
+#forum > h2:first-child, #topic > h2:first-child, h2.topics_title, h2.categories_title {
+    background-color: white;
+}
+
+#side_body img {
+    border: 3px solid #c7c7c7;
+}
+
+#header, header, menu, #menu {
+    &, * {
+        color: $darker-text;
+    }
+    a, a:visited, a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    a:hover {
+      border-bottom: 1px solid $mid-bg1-highlight;
+    }
+}
+
+#header #logo {
+  color: #8ab;
+}
+
+#header #login_status a {
+  color: #8ab;
+  font-weight: bold;
+  text-decoration: underline;
+  &:hover {border: none};
+}
+
+#body_content_title, #forums_title, #forum > h2:first-child, #topic > h2:first-child, h2.topics_title, h2.categories_title {
+    border: 1px solid #ccc;
+}
+
+
+
+#menu, menu {
+    li.selected {
+      border: 1px solid #ccc;
+    }
+
+    li.first {
+      margin-left: -1px;
+    }
+
+    li.last {
+      margin-right: -1px;
+    }
+
+    li, div, > a {
+     &.selected, &.selected * {
+        background-color: white;
+        border-bottom: none;
+      }
+      &:hover, &:hover * {
+          background-color: $mid-bg1-highlight;
+      }
+    }
+}
+
+menu {
+    color: $default-text;
+
+}
+
+
+input.string {
+    height: 20px;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#body, #side_body {
+    background-color: white;
+    border: 1px solid $default-border;
+}
+
+
+
+#footer, footer {
+}
+
+textarea {
+    background-color: white;
+}
+
+form input {
+    font-size: 140%;
+    font-family: Questrial;
+    background-color: white;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+.error {
+    color: #c00;
+}
+.inquiries .field input, .inquiries textarea {
+    border: 1px solid #75766f;
+}
