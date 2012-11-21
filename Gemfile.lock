@@ -10,7 +10,7 @@ GIT
 GIT
   remote: git://github.com/juozasg/forem.git
   revision: 61aaf1e945b582007d970617212e9639133541f9
-  branch: wsa-1-0-stable
+  branch: refinery-site-1-0-stable
   specs:
     forem (1.0.0.beta1)
       cancan
@@ -186,7 +186,7 @@ GEM
       tilt (~> 1.3)
     seo_meta (1.3.0)
       railties (>= 3.0.0)
-    simple_form (2.0.2)
+    simple_form (2.0.4)
       actionpack (~> 3.0)
       activemodel (~> 3.0)
     sprockets (2.1.3)
