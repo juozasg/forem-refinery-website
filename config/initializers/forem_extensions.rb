@@ -8,7 +8,7 @@ Rails.application.config.to_prepare do
   Forem::Post.class_eval do
     before_save do
       if self.text_changed?
-        self.text = Tidy.new(:show_body_only => 'true').clean(self.text)
+        self.text = Tidy.new(:show_body_only => 'true', :drop_empty_paras => 'false').clean(self.text)
       end
     end
   end
