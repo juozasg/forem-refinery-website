@@ -1,5 +1,6 @@
 require File.join(Rails.root, 'config/app.rb')
 
+$default_mailer_host = @app_host
 
 MembersSite::Application.configure do
 
@@ -58,7 +59,7 @@ MembersSite::Application.configure do
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
 
-  config.action_mailer.default_url_options = { :host => @app_host }
+  config.action_mailer.default_url_options = { :host => $default_mailer_host }
   config.action_mailer.delivery_method = :sendmail
 
   # Enable threaded mode

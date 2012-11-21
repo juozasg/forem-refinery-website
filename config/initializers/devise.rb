@@ -1,4 +1,6 @@
 require File.join(Rails.root, 'config/app.rb')
+$app_host = @app_host
+$app_name = @app_name
 
 require 'devise'
 
@@ -8,7 +10,7 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = "'@app_name' <no-reply@#{@app_host}>"
+  config.mailer_sender = "'#{$app_name}' <no-reply@#{$app_host}>"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
