@@ -1,5 +1,6 @@
 Users are no longer automatically subscribed to post replies.
 Subscription emails are a lot more informative.
-Empty paragraphs are now supported
+Empty paragraphs will work now
+Numbered and bulleted list fixed.
 More spacing between paragraphs
 Notice and error messages style is more consistent now

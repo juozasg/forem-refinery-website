@@ -122,6 +122,13 @@ h2.topics_title, h2.categories_title {
         line-height: 18px;
         display: block;
       }
+      ul, ol {
+        list-style-position: outside;
+        margin-left: 12px;
+      }
+      ol {
+        margin-left: 20px;
+      }
       p {
         margin-bottom: 12px;
         min-height: 1px;
