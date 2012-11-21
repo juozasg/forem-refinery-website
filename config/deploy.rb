@@ -13,6 +13,7 @@ require 'config/app.rb'
 set :domain, @app_host
 set :deploy_to, "/var/www/#{@app_host}"
 set :repository, "#{@app_repository}"
+set :revision, "#{@app_repository_revision}"
 set :user, 'root'
 # set :port, '30000'
 
