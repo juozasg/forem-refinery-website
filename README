@@ -1,1 +1,4 @@
-RefineryCMS with Forem for forums.
+To use:
+
+* edit config/app.rb to include your domain and application name
+* 'mira deploy' to deploy the app to remote server
