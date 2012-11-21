@@ -13,14 +13,13 @@ require 'config/app.rb'
 set :domain, @app_host
 set :deploy_to, "/var/www/#{@app_host}"
 set :repository, "#{@app_repository}"
-set :revision, "#{@app_repository_revision}"
+set :branch, "#{@app_repository_branch}"
 set :user, 'root'
 # set :port, '30000'
 
 desc "Deploys the current version to the server."
 task :deploy do
   deploy do
-    puts settings.inspect
     # Put things that will set up an empty directory into a fully set-up
     # instance of your project.
     invoke :'git:clone'
@@ -30,9 +29,14 @@ task :deploy do
 
     to :launch do
       queue "export UNICORNPID=$(ps aux | grep 'unicorn_rails master' | grep -v grep | cut -d ' ' -f 6);
+            if [ -z \"$UNICORNPID\" ]
+            then
+              bundle exec unicorn_rails -E production -c #{deploy_to}/current/config/unicorn.rb -D;
+            else
              kill -USR2 $UNICORNPID;
              sleep 5;
-             kill -QUIT $UNICORNPID"
+             kill -QUIT $UNICORNPID
+            fi"
     end
   end
 end
