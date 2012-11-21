@@ -1,4 +1,4 @@
 @app_host = "mysite.com"
-@app_repository = "git@github.com:myname/#{@app_host}.git"
-@app_repository_revision = "master"
+@app_repository = "git@github.com:juozasg/forem-refinery-website.git"
+@app_repository_branch = "master"
 @app_name = "My Site"
