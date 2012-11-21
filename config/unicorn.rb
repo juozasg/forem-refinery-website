@@ -3,7 +3,7 @@
 # See http://unicorn.bogomips.org/Unicorn/Configurator.html for complete
 # documentation.
 
-require 'config/app.rb'
+eval File.read(File.join(File.dirname(__FILE__), 'app.rb'))
 
 app_name = @app_host
 app_path = "/var/www/#{app_name}/current"
