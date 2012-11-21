@@ -1,4 +1,4 @@
-require 'config/app.rb'
+require File.join(Rails.root, 'config/app.rb')
 
 
 MembersSite::Application.configure do
