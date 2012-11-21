@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/juozasg/forem.git
-  revision: 3487053e2368fdca2bce9f2519f575298a526c25
+  revision: bcf79f4f98161e8c58c8b8c0670ca2c3a08cbbb8
   branch: refinery-site-1-0-stable
   specs:
     forem (1.0.0.beta1)

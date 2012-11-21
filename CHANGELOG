@@ -1,5 +1,8 @@
+Show if and when post was edited
+Viewed and unviewed topic should not be correctly marked by an a little icon on to the left of the topic name (i)
 Users are no longer automatically subscribed to post replies.
 Subscription emails are a lot more informative.
-Empty paragraphs are now supported
+Empty paragraphs will work now
+Numbered and bulleted list fixed.
 More spacing between paragraphs
 Notice and error messages style is more consistent now
