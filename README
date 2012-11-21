@@ -1,4 +1,11 @@
+Code for a site that integrates RefineryCMS (pages and user management) with Forem (forums).
+
 To use:
 
 * edit config/app.rb to include your domain and application name
-* 'mira deploy' to deploy the app to remote server
+* 'mina setup' to create empty folders on remote server
+* configure nginx or apache on remote server to point to /var/www/app_name/current folder
+* configure nginx or apache to proxy to unicorn server that runs this app.
+* 'mina deploy' to deploy the app to remote server
+* configure RefineryCMS as needed (you'll be asked to create an admin user)
+* congratulations! users can now register and start using the forums after confirming their emails and getting admin approval in RefineryCMS users management.
