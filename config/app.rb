@@ -1,4 +1,4 @@
-@app_host = "mysite.com"
-@app_repository = "git@github.com:myname/#{@app_host}.git"
-@app_repository_revision = "master"
-@app_name = "My Site"
+@app_host = "members.workersolidarity.org"
+@app_repository = "git@github.com:juozasg/#{@app_host}.git"
+@app_repository_revision = "wsa"
+@app_name = "WSA Members Site"
