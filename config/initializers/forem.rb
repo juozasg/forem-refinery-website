@@ -1,4 +1,5 @@
-require 'config/app.rb'
+require File.join(Rails.root, 'config/app.rb')
+
 
 Forem.user_class = "Refinery::User"
 Forem.user_profile_links = true
